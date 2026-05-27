@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Ramírez - Data Engineering & BI Senior Specialist</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #e2e8f0;
+            background-color: #0b0f19;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header-container {
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .name {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+        .title-sub {
+            font-size: 13pt;
+            color: #38bdf8;
+            font-weight: 600;
+            margin-top: 5px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .contact-info {
+            font-size: 10pt;
+            color: #94a3b8;
+            text-align: right;
+        }
+        @media (max-width: 600px) {
+            .contact-info { text-align: left; }
+            .header-container { flex-direction: column; }
+        }
+        .intro-text {
+            font-size: 11pt;
+            color: #cbd5e1;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+        .badge-container {
+            margin-bottom: 35px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #1e293b;
+            color: #f1f5f9;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 9pt;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+        .badge-accent {
+            background-color: rgba(56, 189, 248, 0.1);
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+        .badge:hover {
+            transform: translateY(-2px);
+            background-color: #38bdf8;
+            color: #0b0f19;
+        }
+        h2 {
+            font-size: 16pt;
+            color: #ffffff;
+            border-left: 4px solid #38bdf8;
+            padding-left: 12px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .project-card {
+            background-color: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+        .project-card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-2px);
+        }
+        .project-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+        .project-meta {
+            font-size: 9pt;
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .star-block {
+            margin-bottom: 12px;
+        }
+        .star-label {
+            font-weight: bold;
+            color: #64748b;
+            text-transform: uppercase;
+            font-size: 8.5pt;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .star-value {
+            color: #cbd5e1;
+            font-size: 10.5pt;
+        }
+        .star-value strong {
+            color: #38bdf8;
+        }
+        .code-snippet {
+            font-family: 'Consolas', 'Courier New', monospace;
+            background-color: #030712;
+            border: 1px solid #1f2937;
+            color: #9cdcfe;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 9pt;
+            margin-top: 15px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            line-height: 1.4;
+        }
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .showcase-box {
+            background-color: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 18px;
+            transition: border-color 0.3s ease;
+        }
+        .showcase-box:hover {
+            border-color: #38bdf8;
+        }
+        .showcase-name {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+        .showcase-desc {
+            font-size: 9.5pt;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-container">
+            <div>
+                <h1 class="name">JESÚS RAMÍREZ</h1>
+                <div class="title-sub">BI & Data Engineering Senior Specialist | QA Director</div>
+            </div>
+            <div class="contact-info">
+                +58 416-730-4115<br>
+                jrlus1705@gmail.com<br>
+                San Diego, Carabobo, Venezuela
+            </div>
+        </div>
+
+        <div class="intro-text">
+            Ingeniero en Informática con más de 25 años de trayectoria impecable liderando la arquitectura de datos, Business Intelligence y el aseguramiento de calidad (QA). Especialista en transformar lógicas de negocio complejas y volúmenes caóticos de información en tuberías analíticas (Pipelines) de alta velocidad y cuadros de mando estratégicos para la toma de decisiones directivas de alto impacto.
+        </div>
+
+        <div class="badge-container">
+            <span class="badge badge-accent">Apache Airflow</span>
+            <span class="badge badge-accent">Apache Superset</span>
+            <span class="badge badge-accent">SQL Server (T-SQL)</span>
+            <span class="badge badge-accent">Grafana (eCharts)</span>
+            <span class="badge badge-accent">PowerBI</span>
+            <span class="badge badge-accent">Docker</span>
+            <span class="badge badge-accent">Java (Spring Boot)</span>
+            <span class="badge badge-accent">QA Management</span>
+            <span class="badge badge-accent">AI Prompt Engineering</span>
+        </div>
+
+        <h2>🏆 Casos de Estudio Magistrales (Metodología STAR)</h2>
+
+        <div class="project-card">
+            <div class="project-title">1. Reingeniería y Optimización de Datos Extrema (Ecosistema Analítico ERP)</div>
+            <div class="project-meta">Tecnologías: SQL Server, T-SQL Avanzado, Cursores Dinámicos, Tablas Temporales, Grafana (eCharts)</div>
+            
+            <div class="star-block">
+                <span class="star-label">Situación</span>
+                <div class="star-value">Un tablero analítico crítico corporativo operaba bajo una consulta monolítica heredada de <strong>16,410 líneas de código</strong>, penalizada con <strong>180 operaciones UNION ALL</strong> redundantes. Al seleccionar todos los centros en el panel de control, el sistema colapsaba generando latencias de más de 2 minutos y constantes errores por límite de tiempo (Time Out).</div>
+            </div>
+            <div class="star-block">
+                <span class="star-label">Tarea</span>
+                <div class="star-value">Refactorizar por completo el backend de datos para consolidar la lógica, eliminar la redundancia estructural y estabilizar los tiempos de carga analíticos a nivel gerencial.</div>
+            </div>
+            <div class="star-block">
+                <span class="star-label">Acción</span>
+                <div class="star-value">Diseñé una arquitectura dinámica basada en procedimientos parametrizados y un cursor optimizado que procesa dinámicamente las bases de datos de cada sucursal. Centralicé la computación indexando tablas temporales aisladas para comisiones de servicios y productos, integré el procesamiento analítico de horas disponibles en base al día de la semana (`DATENAME`), e inyecté subconsultas agregadas complejas para la generación instantánea de KPIs críticos (Welcome Packs, JPAs, nuevos vs recurrentes).</div>
+            </div>
+            <div class="star-block">
+                <span class="star-label">Resultado</span>
+                <div class="star-value">Reducción masiva del código fuente en un <strong>97.5%</strong> (de 16,410 líneas a solo 400 líneas limpias). Eliminación absoluta de los Time Outs y aceleración del rendimiento en más de un <strong>85%</strong>, mostrando la información consolidada en <strong>menos de 20 segundos</strong>.</div>
+            </div>
+            
+            <div class="code-snippet">-- Estructura de la Arquitectura Optimizada (Muestra de Producción)
+DECLARE cur_centros CURSOR FOR SELECT NombreenBD, name FROM BI.dbo.trainingcenter;
+OPEN cur_centros; FETCH NEXT FROM cur_centros INTO @NombreBD, @NombreCentro;
+WHILE @@FETCH_STATUS = 0 BEGIN
+    SET @SQL = N'INSERT INTO #ComisionesConsolidadas SELECT @Centro, ... FROM ' + QUOTENAME(@NombreBD) + '...';
+    EXEC sp_executesql @SQL, N'@fStart DATE, ...', @fStart = @desde, ...;
+    FETCH NEXT FROM cur_centros INTO @NombreBD, @NombreCentro;
+END; CLOSE cur_centros; DEALLOCATE cur_centros;</div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">2. Dirección e Ingeniería del Dashboard Estratégico Corporativo (Metropolitan)</div>
+            <div class="project-meta">Tecnologías: Modelado Dimensional, Business Intelligence, Data Pipelines, KPI Automation</div>
+            
+            <div class="star-block">
+                <span class="star-label">Situación</span>
+                <div class="star-value">La directiva ejecutiva de la corporación operaba con fragmentación de reportes y requería una visión unificada del estado del negocio, procesando datos masivos y heterogéneos.</div>
+            </div>
+            <div class="star-block">
+                <span class="star-label">Tarea</span>
+                <div class="star-value">Conceptualizar y construir un ecosistema analítico centralizado de Business Intelligence para automatizar KPIs directivos complejos en tiempo real.</div>
+            </div>
+            <div class="star-block">
+                <span class="star-label">Acción</span>
+                <div class="star-value">Lideré el modelado de datos, estableciendo las canalizaciones automatizadas de extracción y transformación que unifican las fuentes operativas bajo reglas de negocio estrictas.</div>
+            </div>
+            <div class="star-block">
+                <span class="star-label">Resultado</span>
+                <div class="star-value">Despliegue exitoso de una consola de mando estratégica que mitiga el riesgo operativo, permitiendo a la junta directiva diagnosticar la salud institucional de inmediato y acelerar la planeación estratégica.</div>
+            </div>
+        </div>
+
+        <h2>📊 Galería de Tableros Gerenciales Desarrollados (Grafana / Superset)</h2>
+        <div class="showcase-grid">
+            <div class="showcase-box">
+                <div class="showcase-name">📈 Dirección General</div>
+                <div class="showcase-desc">Monitoreo macro de ingresos, tasas de altas/bajas de afiliados y socios activos, contrastados automáticamente contra el Budget o previsión financiera anual corporativa.</div>
+            </div>
+            <div class="showcase-box">
+                <div class="showcase-name">🏋️ Fitness AADD</div>
+                <div class="showcase-desc">Panel operacional avanzado para la coordinación técnica que correlaciona de manera masiva la asistencia a actividades dirigidas frente a los accesos generales del club.</div>
+            </div>
+            <div class="showcase-box">
+                <div class="showcase-name">💈 Sector Estética & Belleza</div>
+                <div class="showcase-desc">Visualización granular del rendimiento por trabajador, comisiones netas divididas por servicios/productos, ratios de ocupación y control analítico de Welcome Packs.</div>
+            </div>
+            <div class="showcase-box">
+                <div class="showcase-name">🔮 Tendencias & Comercial</div>
+                <div class="showcase-desc">Análisis predictivo del comportamiento de compra y patrones estacionales de consumo para optimizar las campañas de marketing y la rotación de inventarios.</div>
+            </div>
+        </div>
+
+        <h2>🧠 Enfoque Metodológico & Aseguramiento de Calidad (QA)</h2>
+        <div class="intro-text" style="font-size: 10pt; margin-top: 10px;">
+            Como <strong>QA Director</strong>, mi filosofía de trabajo radica en una inspección milimétrica de cada sistema bajo la perspectiva del cliente final: <em>"Reviso y audito cada flujo de software como si yo mismo hubiese pagado por su desarrollo"</em>. Experto en liderar flujos de control de incidentes en Jira y YouTrack, gestionando el ciclo completo de pruebas, testing de regresión, stress de bases de datos masivas y optimización extrema basada en Inteligencia Artificial y Prompt Engineering de alto nivel para la aceleración extrema de procesos.
+        </div>
+    </div>
+
+</body>
+</html>
